@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/911dcf55c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="~/lib/Font-Awesome/css/solid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="row nav__container">
+          <div class="logo--img">
+          <img
+            class="logo"
+            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+            alt="T logo"
+          />
+          <div class="logo--title">Treact</div>
+        </div>
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Blog</a></li>
+            <li><a href="#" class="nav__link">Pricing</a></li>
+            <li><a href="#" class="nav__link">Contact Us</a></li>
+            <li><a href="#" class="nav__link">Login</a></li>
+            <button class="btn">Sign Up</button>
+          </ul>
+
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+
+            <!-- <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+              </li>
+            </ul> -->
+
+
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <!-- <div class="row"> -->
+          <div class="header__description">
+            <h1>
+              Beautiful React Templates<span class="blue"> for you.</span>
+            </h1>
+            <p>
+              Our templates are easy to setup, understand and customize. Fully
+            </p>
+            <p>modular components with a variety of pages and components.</p>
+            <a href="#features">
+              <button class="btn">Get Started</button>
+            </a>
+          </div>
+          <figure class="header__img--wrapper">
+            <img
+              src="./assets/Undraw_Books.svg"
+              alt=""
+            />
+          <!-- </div> -->
+          </figure>
+        </div>
+      </header>
+    </section>
+    <main>
+      <section id="Features"></section>
+      <section id="Quality"></section>
+      <section id="Steps"></section>
+      <section id="Values"></section>
+      <section id="Pricing"></section>
+      <section id="Testimonials"></section>
+      <section id="Advertise"></section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__group">
+          <ul class="footer__links">
+            <h3>MAIN</h3>
+            <li><a href="#" class="footer__link no-cursor">Blog</a></li>
+            <li><a href="#" class="footer__link no-cursor">FAQs</a></li>
+            <li><a href="#" class="footer__link no-cursor">Support</a></li>
+            <li><a href="#" class="footer__link no-cursor">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <ul class="footer__links">
+            <h3>PRODUCT</h3>
+            <li><a href="#" class="footer__link no-cursor">Log In</a></li>
+            <li><a href="#" class="footer__link no-cursor">Personal</a></li>
+            <li><a href="#" class="footer__link no-cursor">Business</a></li>
+            <li><a href="#" class="footer__link no-cursor">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <ul class="footer__links">
+            <h3>PRESS</h3>
+            <li><a href="#" class="footer__link no-cursor">Logos</a></li>
+            <li><a href="#" class="footer__link no-cursor">Events</a></li>
+            <li><a href="#" class="footer__link no-cursor">Stories</a></li>
+            <li><a href="#" class="footer__link no-cursor">Office</a></li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <ul class="footer__links">
+            <h3>TEAM</h3>
+            <li><a href="#" class="footer__link no-cursor">Career</a></li>
+            <li><a href="#" class="footer__link no-cursor">Founders</a></li>
+            <li><a href="#" class="footer__link no-cursor">Culture</a></li>
+            <li><a href="#" class="footer__link no-cursor">Onboarding</a></li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <ul class="footer__links">
+            <h3>LEGAL</h3>
+            <li><a href="#" class="footer__link no-cursor">GDPR</a></li>
+            <li>
+              <a href="#" class="footer__link no-cursor">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link no-cursor">Terms of Service</a>
+            </li>
+            <li><a href="#" class="footer__link no-cursor">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__btm">
+        <div class="row nav__container">
+          <div class="logo--title"><img
+            class="logo"
+            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+            alt="T logo"
+          />
+ Treact Inc.</div>
+        </div>
+        <!-- <img class="logo" src="./assets/Library.svg" alt="" /> -->
+        <div class="footer__copyright">
+          Copyright © 2018 All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
