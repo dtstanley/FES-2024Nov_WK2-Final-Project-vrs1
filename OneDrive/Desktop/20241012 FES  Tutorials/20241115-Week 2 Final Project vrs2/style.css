@@ -36,10 +36,23 @@ img {
 }
 
 .row {
+    /* flex-direction: column;
+    align-items: center; */
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.row__narrow {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
 
 /* NAVIGATION BAR */
 
@@ -119,6 +132,11 @@ nav {
 .container {
     padding: 80px;
 }
+header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .header__description {
     text-align: center;
@@ -138,15 +156,18 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
 }
 
 .header__email--input {
     width: 100%;
     border-radius: 500px;
     border: 2px solid rgb(229 231 235);
+    padding: 20px 192px 20px 32px;
     color: rgb(36, 62, 99);
     font-size: 16px;
     font-weight: 500;
+    position: relative;
     top: 0;
     bottom: 0;
     z-index: 1;
@@ -155,16 +176,21 @@ nav {
 
 .header__email--btn {
     margin: 8px;
-    width: 160px;
+    width: 100%;
     height: calc(100% - 16px);
     border-radius: 500px;
     border: none;
     background-color: #6415ff;
+    padding: 12px 220px ;
     color: white;
     font-weight: 700;
     font-size: 16px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     transition: all 300ms;
     z-index: 2;
+    white-space: nowrap;
 }
 
 .header__customers {
@@ -190,61 +216,76 @@ button {
     border: none;
 }
 
-/* 
+/* Features */
 
-Features 
+.section__tag {
+    font-size: 16px;
+    color: #6415ff;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-*/
+.section__para {
+    text-align: center;
+    max-width: 576px;
+}
+
+.feature__text {
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.feature__row {
+    padding: 32px 8px;
+    margin: 0 16px;
+}
+
+.feature__img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature__img--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 500px;
+}
+
+.feature__para {
+    margin-top: 16px;
+    font-size: 16px;
+    max-width: calc(634px/3);
+    color: rgb(124, 139, 161);
+    line-height: 2;
+    font-weight: 500;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Quality */
 
 
-/* 
 
-Quality 
-
-*/
+/* Steps */
 
 
-
-/* 
-
-Steps 
-
-*/
+/* Values */
 
 
-/* 
-
-Values 
-
-*/
+/* Pricing */
 
 
-/* 
-
-Pricing 
-
-*/
+/* Testimonials */
 
 
-/* 
-
-Testimonials 
-
-*/
+/* Advertise */
 
 
-/* 
-
-Advertise 
-
-*/
-
-
-/* 
-
-Footer 
-
-*/
+/* Footer */
 
 
 /* Large Digital Device */
@@ -257,6 +298,27 @@ padding-right: 64px;
         display: flex;
         justify-content: flex-end;
     }
+
+    #features .section__title, #pricing .section__title {
+        text-align: center;
+    }
+
+    .section__title {
+        font-size: 48px;
+        font-weight: 900;
+        color: rgb(36, 62, 99);
+        line-height: 1.5;
+        margin: 16px 0;
+        letter-spacing: 0.025em;
+    }
+
+    .section__para {
+        font-size: 18px;
+        font-weight: 500;
+        color: #7c8ba1;
+        line-height: 1.625;
+    }
+
 }
 
 /* MEDIUM DIGITAL DEVICE */
@@ -269,6 +331,39 @@ padding-right: 64px;
 
     .header__customer--title, .header__img--wrapper {
         margin-top: 48px;
+    }
+    .row__narrow {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    #features .section__title, #pricing .section__title {
+        font-size: 48px;
+    }
+    .section__title {
+        font-size: 36px;
+    }
+
+    .section__para {
+        font-size: 16px;
+    }
+
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
+    }
+
+    .feature__para {
+        max-width: none;
+    }
+}
+
+/* MID-SMALL DIGITAL DEVICE */
+
+@media (max-width: 768px) {
+    .section__para {
+        font-size: 14px;
     }
 }
 
@@ -292,5 +387,30 @@ padding-right: 64px;
         margin: 16px 0;
         margin-bottom: 0px;
         line-height: 1.5;
+    }
+
+    #features .section__title, #pricing .section__title {
+        font-size: 36px;
+    }
+
+    .section__title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .feature__text {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .feature__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature__para {
+        margin-top: 4px;
+        line-height: 2;
     }
 }
