@@ -1376,6 +1376,10 @@ padding-right: 64px;
         justify-content: center;
     }
 
+    .feature {
+        width: calc(100%);
+    }
+
 }
 
 /* SMALL DIGITAL DEVICE */
@@ -1415,7 +1419,7 @@ padding-right: 64px;
     }
 
     .feature {
-        width: calc(50%);
+        width: calc(100%);
     }
 
     .feature__text {
