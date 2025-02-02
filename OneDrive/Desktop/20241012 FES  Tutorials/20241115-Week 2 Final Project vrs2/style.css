@@ -645,7 +645,10 @@ z-index: 2;
     display: flex;
     justify-content: center;
     align-content: center;
+}
 
+.steps__label {
+    font-size: 36px;
 }
 
 /* Values */
@@ -1416,6 +1419,27 @@ padding-right: 64px;
         width: 100%;
         max-width: 448px;
         text-align: center;
+        padding-top: 75px;
+    }
+
+    .steps__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step__number {
+        width: 100%;
+    }
+
+    .step__description {
+        width: 100%;
+    }
+
+    .steps__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -1474,6 +1498,13 @@ padding-right: 64px;
     .feature__para {
         margin-top: 4px;
         line-height: 2;
+    }
+
+    .step {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
